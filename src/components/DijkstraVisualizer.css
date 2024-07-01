@@ -1,0 +1,84 @@
+.visualizer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.graph {
+  position: relative;
+  width: 1000px;
+  height: 1000px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.node {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 5;
+}
+
+.visited {
+  background-color: red; /* Example: Change background color for visited nodes */
+  /* Add other styling as needed */
+}
+
+.graph .node.visited {
+  /* Example styling */
+  background-color: red; /* Adjust as per your design */
+  /* Add other styling as needed */
+}
+
+.node.visited {
+  background-color: yellow; /* Change color for visited nodes */
+}
+
+.node.selected {
+  border: 2px solid #e74c3c; /* Highlight selected node */
+}
+
+.edges {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.edge {
+  stroke: #555;
+  stroke-width: 2;
+  transition: stroke 0.3s ease;
+}
+
+.highlighted-edge {
+  stroke: orange; /* Example color */
+  stroke-width: 5px; /* Example width */
+}
+
+.sidebar {
+  position: absolute;
+  top: 300px; /* Adjust top position */
+  right: 350px; /* Adjust right position */
+  width: 400px; /* Adjust width as needed */
+  max-width: 400px; /* Limit maximum width for larger screens */
+  max-height: 80vh; /* Limit height to 80% of viewport height */
+  overflow-y: auto; /* Add vertical scrollbar if content exceeds max-height */
+  padding: 10px;
+  border: 1px solid #ccc;
+}

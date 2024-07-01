@@ -1,0 +1,47 @@
+.Selection-sort-visualizer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .controls {
+    margin-bottom: 10px;
+  }
+  
+  .bars-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .bars-container {
+    display: flex;
+    justify-content: center; /* Center the bars horizontally */
+    gap: 5px;
+    width: 1000px; /* Adjust width as needed, matching your .graph dimensions */
+    height: 1000px; /* Match the height of your .graph */
+    background-color: #f0f0f0; /* Match the background color of your .graph */
+    border: 1px solid #ccc; /* Match the border of your .graph */
+    overflow: hidden;
+    margin: 0 auto; /* Auto margins horizontally center the container */
+  }
+  
+  .bar {
+    width: 20px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .bar-label {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #555;
+  }
+  .highlighted
+  {
+    background-color: red;
+  }

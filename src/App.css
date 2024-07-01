@@ -1,0 +1,90 @@
+body {
+  background-color:lightblue;
+  margin:0;
+  padding:0;
+  color: white
+}
+
+.title {
+  color: black
+}
+
+.app-container {
+  max-height: 1000px; /* Adjust as needed */
+  margin: 0 auto; /* Center align the container */
+  padding: 20px; /* Add padding around the content */
+}
+
+.selected-algorithm {
+  position: absolute;
+  top: 20px; /* Adjust top position as needed */
+  right: 20px; /* Adjust right position as needed */
+  text-align: center;
+  background-color: #fff; /* Example background color */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  color: blue
+}
+
+.selected-algorithm-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: red
+}
+
+.dropdown-button {
+  padding: 10px 20px;
+  background-color: #add8e6;
+  color: white;
+  border:1px solid darkcyan;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background: darkcyan
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  border: 1px solid gray; /* Adds a border around the entire dropdown */
+  border-radius: 5px;
+  background-color: rgb(202, 195, 195);
+  width: auto; /* Allow menu to adjust width based on content */
+  max-width: 200px; /* Limit maximum width to prevent full screen extension */
+  position: absolute; /* Ensures correct positioning */
+  z-index: 1;
+}
+
+.dropdown-item {
+  padding: 10px;
+  background-color: rgb(202, 195, 195);
+  border: 1px solid #ccc; /* Adds a border around each item */
+  border-radius: 5px;
+  margin-bottom: 5px; /* Adds space between items */
+  width: 100%; /* Allow item width to adjust based on content */
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: black;
+  box-sizing: border-box; /* Ensures padding is included in the item's total width */
+}
+
+.dropdown-item:hover {
+  background-color: gray;
+}
+
+.spacer {
+  height: 100px
+}
+.sorting-algorithms-section {
+  margin-top: 20px; /* Default margin */
+  transition: margin-top 0.3s ease; /* Smooth transition for margin change */
+
+  /* Add conditional margin if sortingMovedDown is true */
+  &.sorting-moved-down {
+    margin-top: 200px; /* Adjusted margin */
+  }
+}

@@ -1,0 +1,41 @@
+.visualizer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  .graph {
+    position: flex;
+    width: 1000px;
+    height: 1000px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+  }
+  
+  .node {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .graph .node.visited {
+    /* Example styling */
+    background-color: red; /* Adjust as per your design */
+    /* Add other styling as needed */
+  }
+  .highlighted-edge {
+    stroke: orange; /* Example color */
+    stroke-width: 5px; /* Example width */
+  }
+  
